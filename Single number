@@ -1,0 +1,8 @@
+def findSingleNumber(A):
+    result = 0
+    for num in A:
+        result ^= num
+    return result
+
+print(findSingleNumber([1, 2, 2, 3, 1]))  # Output: 3
+print(findSingleNumber([1, 2, 2]))        # Output: 1
